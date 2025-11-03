@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "prod-project_pd_entrega2"
+version = "0.0.1"
+description = "Proyecto desarrollado para el curso de Product Development entrega 2 Exploratory Data Analysis"
+authors = [
+  { name = "team-6" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+requires-python = "~=3.10.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["prod-project_pd_entrega2"]
+include = ["pyproject.toml", "prod-project_pd_entrega2/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["prod-project_pd_entrega2"]
+force-sort-within-sections = true
+
