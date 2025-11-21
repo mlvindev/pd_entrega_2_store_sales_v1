@@ -3,35 +3,7 @@
 # DATA & ARTIFACTS - No comitear datos sensibles o generados localmente
 # ============================================================================
 
-# Data
-/data/
 
-# Ignorar archivos de datos (NO la estructura)
-/data/**/*.csv
-/data/**/*.xlsx
-/data/**/*.json
-/data/**/*.parquet
-/data/**/*.feather
-/data/**/*.pkl
-/data/**/*.pickle
-/data/**/*.h5
-/data/**/*.hdf5
-/data/**/*.db
-/data/**/*.sqlite3
-/data/**/*.zip
-/data/**/*.tar.gz
-/data/**/*.tar
-/data/**/*.rar
-
-# modelos
-/models/
-
-# Outputs generados
-/reports/**/*.html
-/reports/figures/**/*.png
-/reports/figures/**/*.jpg
-/reports/figures/**/*.pdf
-/reports/figures/**/*.eps
 
 # ============================================================================
 # SEGURIDAD - Credenciales, secretos, configuración sensible

@@ -1,0 +1,24 @@
+[33mcommit c8fbac201df687cc50bb0a118e2c2e54a599d017[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: 5c6f8e9 09c0b68
+Author: mlvindev <11397881+mlvindev@users.noreply.github.com>
+Date:   Tue Nov 11 21:42:22 2025 -0600
+
+    Merge branch 'main' of https://github.com/mlvindev/pd_entrega_2_store_sales_v1
+
+[33mcommit 5c6f8e9db8a8f58aa5ec959a4820b6963c3a4f21[m
+Author: mlvindev <11397881+mlvindev@users.noreply.github.com>
+Date:   Tue Nov 11 21:25:55 2025 -0600
+
+    Se trabaja fase 3 feature engineering
+
+[33mcommit 09c0b6834d776b676b315dc865da5a4735f67e41[m
+Author: Jennifer Tobar <18004720@galileo.edu>
+Date:   Sun Nov 2 22:52:40 2025 -0600
+
+    Cambios Caratula
+
+[33mcommit 10c21c357b08cc3a37c78f7a41a68bb0acc5df4f[m
+Author: mlvindev <11397881+mlvindev@users.noreply.github.com>
+Date:   Sun Nov 2 21:57:25 2025 -0600
+
+    Entrega 2 del proyecto del curso product development
