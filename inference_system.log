@@ -1,0 +1,33 @@
+2025-12-19 19:46:17 - INFO - ================================================================================
+2025-12-19 19:46:17 - INFO - Iniciando proceso de inferencia
+2025-12-19 19:46:17 - INFO - ================================================================================
+2025-12-19 19:52:21 - INFO - ================================================================================
+2025-12-19 19:52:21 - INFO - Iniciando proceso de inferencia
+2025-12-19 19:52:21 - INFO - ================================================================================
+2025-12-19 19:52:21 - INFO - Dataset cargado: (2121, 22)
+2025-12-19 19:52:21 - INFO - Features derivadas creadas exitosamente
+2025-12-19 19:52:21 - INFO - Train set: 1696 registros
+2025-12-19 19:52:21 - INFO - Test set: 425 registros
+2025-12-19 19:52:21 - INFO - Pipeline cargado: models/stores_sales_forecasting_pipeline.pkl
+2025-12-19 20:20:25 - INFO - ================================================================================
+2025-12-19 20:20:25 - INFO - Iniciando proceso de inferencia
+2025-12-19 20:20:25 - INFO - ================================================================================
+2025-12-19 20:20:25 - INFO - Dataset cargado: (2121, 22)
+2025-12-19 20:20:25 - INFO - Pipeline manejará la creación de features derivadas
+2025-12-19 20:20:25 - INFO - Train set: 1696 registros
+2025-12-19 20:20:25 - INFO - Test set: 425 registros
+2025-12-19 20:20:25 - INFO - Número de features: 21
+2025-12-19 20:20:26 - INFO - Pipeline cargado: models/stores_sales_forecasting_pipeline.pkl
+2025-12-19 20:20:26 - INFO - Predicciones generadas: 425
+2025-12-19 20:20:26 - INFO - Tiempo de inferencia: 0.04 segundos
+2025-12-19 20:20:26 - INFO - RMSE: 466.28
+2025-12-19 20:20:26 - INFO - MAE: 225.26
+2025-12-19 20:20:26 - INFO - R² Score: 0.3101
+2025-12-19 20:20:26 - INFO - MAPE: 152.67%
+2025-12-19 20:20:26 - INFO - Resultados guardados en: results/predicciones_20251219_202026.csv
+2025-12-19 20:20:26 - INFO - Total de registros guardados: 425
+2025-12-19 20:20:26 - INFO - ================================================================================
+2025-12-19 20:20:26 - INFO - Proceso de inferencia completado exitosamente
+2025-12-19 20:20:26 - INFO - RMSE: 466.28, R²: 0.3101
+2025-12-19 20:20:26 - INFO - Archivo generado: results/predicciones_20251219_202026.csv
+2025-12-19 20:20:26 - INFO - ================================================================================

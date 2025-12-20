@@ -238,3 +238,23 @@
 2025-12-19 17:28:16 - INFO - svr - RMSE: 524.66 (+/- 77.37), R²: -0.1150, MAE: 287.19, Tiempo: 0.62s
 2025-12-19 17:28:17 - INFO - xgboost - RMSE: 281.51 (+/- 55.75), R²: 0.6751, MAE: 133.61, Tiempo: 0.54s
 2025-12-19 17:28:18 - INFO - Entrenamiento completado en 18.77 segundos
+2025-12-19 17:35:40 - INFO - ================================================================================
+2025-12-19 17:35:40 - INFO - Iniciando proceso de entrenamiento de modelos
+2025-12-19 17:35:40 - INFO - ================================================================================
+2025-12-19 17:35:49 - INFO - Iniciando entrenamiento de modelos
+2025-12-19 17:35:56 - INFO - linear_regression - RMSE: 447.43 (+/- 87.98), R²: 0.1847, MAE: 281.10, Tiempo: 6.65s
+2025-12-19 17:36:01 - INFO - random_forest - RMSE: 263.03 (+/- 45.73), R²: 0.7157, MAE: 122.88, Tiempo: 4.30s
+2025-12-19 17:36:02 - INFO - gradient_boosting - RMSE: 265.18 (+/- 49.74), R²: 0.7132, MAE: 133.35, Tiempo: 0.82s
+2025-12-19 17:36:03 - INFO - svr - RMSE: 524.66 (+/- 77.37), R²: -0.1150, MAE: 287.19, Tiempo: 0.56s
+2025-12-19 17:36:05 - INFO - xgboost - RMSE: 281.51 (+/- 55.75), R²: 0.6751, MAE: 133.61, Tiempo: 0.54s
+2025-12-19 17:36:05 - INFO - Entrenamiento completado en 15.94 segundos
+2025-12-19 17:36:09 - INFO - Modelo campeón seleccionado: random_forest con RMSE=263.03
+2025-12-19 17:36:19 - INFO - Modelo campeón registrado - Run ID: 389473e28e4c4e35820e89d94ddba896
+2025-12-19 17:36:19 - INFO - Métricas finales - RMSE: 100.45, R²: 0.9601
+2025-12-19 17:36:24 - INFO - Pipeline completo guardado con modelo campeón: random_forest
+2025-12-19 17:36:24 - INFO - Métricas en test - RMSE: 466.28, R²: 0.3101
+2025-12-19 17:36:30 - INFO - ================================================================================
+2025-12-19 17:36:30 - INFO - Proceso de entrenamiento completado exitosamente
+2025-12-19 17:36:30 - INFO - Modelo campeón: random_forest
+2025-12-19 17:36:30 - INFO - RMSE en test: 466.28
+2025-12-19 17:36:30 - INFO - ================================================================================

@@ -37,10 +37,19 @@ from mlflow.models.signature import infer_signature
 MLFLOW_TRACKING_URI = "http://127.0.0.1:8080"
 EXPERIMENT_NAME = "Sales_Forecasting_Model_Selection"
 LOG_FILE = "ml_system.log"
-DATA_PATH = '../data/raw/stores_sales_forecasting_updated_v3.1.csv'
-PIPELINE_PATH = '../models/stores_sales_forecasting_data_pre_proc.pkl'
-OUTPUT_PIPELINE_PATH = '../models/stores_sales_forecasting_pipeline.pkl'
-RESULTS_PATH = '../results/models_comparison.csv'
+
+# Configuración de rutas relativas pruebas proyecto
+#DATA_PATH = '../data/raw/stores_sales_forecasting_updated_v3.1.csv'
+#PIPELINE_PATH = '../models/stores_sales_forecasting_data_pre_proc.pkl'
+#OUTPUT_PIPELINE_PATH = '../models/stores_sales_forecasting_pipeline.pkl'
+#RESULTS_PATH = '../results/models_comparison.csv'
+
+# Configuración de rutas absolutas teniendo dvc
+DATA_PATH = 'data/raw/stores_sales_forecasting_updated_v3.1.csv'
+PIPELINE_PATH = 'models/stores_sales_forecasting_data_pre_proc.pkl'
+OUTPUT_PIPELINE_PATH = 'models/stores_sales_forecasting_pipeline.pkl'
+RESULTS_PATH = 'results/models_comparison.csv'
+
 CHAMPION_SUMMARY_PATH = 'champion_summary.json'
 CV_FOLDS = 10
 TEST_SIZE = 0.2

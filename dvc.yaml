@@ -1,0 +1,7 @@
+stages:
+      preproc:
+            cmd: python prod-project_pd_entrega2/feature_eng_creation.py
+      train:
+            cmd: python prod-project_pd_entrega2/model_training.py
+      inference:
+            cmd: python prod-project_pd_entrega2/inference_calculation.py

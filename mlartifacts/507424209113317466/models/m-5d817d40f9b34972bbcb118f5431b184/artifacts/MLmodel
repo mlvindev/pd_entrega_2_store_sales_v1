@@ -1,0 +1,31 @@
+artifact_path: mlflow-artifacts:/507424209113317466/models/m-5d817d40f9b34972bbcb118f5431b184/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.14
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+is_signature_from_type_hint: false
+mlflow_version: 3.7.0
+model_id: m-5d817d40f9b34972bbcb118f5431b184
+model_size_bytes: 37189350
+model_uuid: m-5d817d40f9b34972bbcb118f5431b184
+prompts: null
+run_id: 3feb931b0e8041d5b8c979b07b139f5c
+signature:
+  inputs: '[{"type": "long", "name": "Row ID", "required": true}, {"type": "long",
+    "name": "Postal Code", "required": true}, {"type": "long", "name": "Quantity",
+    "required": true}, {"type": "double", "name": "Discount", "required": true}, {"type":
+    "double", "name": "Profit", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-12-20 01:52:14.116707'

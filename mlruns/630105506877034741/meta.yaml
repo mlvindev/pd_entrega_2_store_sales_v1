@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/630105506877034741
+creation_time: 1766195511157
+experiment_id: '630105506877034741'
+last_update_time: 1766195511157
+lifecycle_stage: active
+name: Feature_Engineering_Pipeline

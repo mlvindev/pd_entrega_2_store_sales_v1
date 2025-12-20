@@ -2,6 +2,9 @@
 Script: Inference Calculation
 Descripción: Cálculo de predicciones y métricas de evaluación del modelo
 Autor: Grupo6
+
+CORRECCIÓN: Este script NO crea features derivadas manualmente.
+El pipeline se encarga de todas las transformaciones.
 """
 
 # ============================================================================
@@ -23,9 +26,12 @@ warnings.filterwarnings('ignore')
 # ============================================================================
 # 2. CONSTANTES
 # ============================================================================
-DATA_PATH = '../data/raw/stores_sales_forecasting_updated_v3.1.csv'
-PIPELINE_PATH = '../models/stores_sales_forecasting_pipeline.pkl'
-RESULTS_DIR = '../results/'
+
+# Configuración de rutas absolutas teniendo dvc
+DATA_PATH = 'data/raw/stores_sales_forecasting_updated_v3.1.csv'
+PIPELINE_PATH = 'models/stores_sales_forecasting_pipeline.pkl'
+RESULTS_DIR = 'results/'
+
 LOG_FILE = 'inference_system.log'
 TEST_SIZE = 0.2
 DATE_FORMAT = "%Y%m%d_%H%M%S"
@@ -64,33 +70,10 @@ inference_data = pd.read_csv(DATA_PATH, sep=';', encoding='utf-8')
 print(f"✅ Dataset cargado: {inference_data.shape}")
 logger.info("Dataset cargado: %s", inference_data.shape)
 
-# Convertir fechas a datetime
-print("📅 Convirtiendo fechas...")
-inference_data['Order Date'] = pd.to_datetime(
-    inference_data['Order Date'],
-    dayfirst=True,
-    errors='coerce'
-)
-inference_data['Ship Date'] = pd.to_datetime(
-    inference_data['Ship Date'],
-    dayfirst=True,
-    errors='coerce'
-)
-
-# Crear variables derivadas de fechas
-print("🔧 Creando features derivadas...")
-inference_data['Order_Month'] = inference_data['Order Date'].dt.month
-inference_data['Order_Quarter'] = inference_data['Order Date'].dt.quarter
-inference_data['Days to Ship'] = (
-    inference_data['Ship Date'] - inference_data['Order Date']
-).dt.days
-
-print("✅ Features derivadas creadas")
-print("   - Order_Month")
-print("   - Order_Quarter")
-print("   - Days to Ship")
-
-logger.info("Features derivadas creadas exitosamente")
+# IMPORTANTE: NO crear features derivadas manualmente
+# El pipeline se encarga de todas las transformaciones
+print("ℹ️  El pipeline manejará todas las transformaciones de features")
+logger.info("Pipeline manejará la creación de features derivadas")
 
 
 # ============================================================================
@@ -101,8 +84,9 @@ print("DIVISIÓN DE DATOS")
 print("=" * 80 + "\n")
 
 # Separar features y target
-X = inference_data.drop(['Sales'], axis=1)
-y = inference_data['Sales']
+# El pipeline espera recibir el DataFrame completo SIN Sales
+X = inference_data.drop(['Sales'], axis=1).copy()
+y = inference_data['Sales'].copy()
 
 # Split temporal (80/20) - SIN shuffle para mantener orden temporal
 split_index = int(len(inference_data) * (1 - TEST_SIZE))
@@ -115,9 +99,11 @@ y_test = y.iloc[split_index:].copy()
 print(f"📊 Datos divididos:")
 print(f"   Train: {len(x_train):,} registros ({len(x_train)/len(X)*100:.1f}%)")
 print(f"   Test:  {len(x_test):,} registros ({len(x_test)/len(X)*100:.1f}%)")
+print(f"   Columnas en X_test: {x_test.shape[1]}")
 
 logger.info("Train set: %d registros", len(x_train))
 logger.info("Test set: %d registros", len(x_test))
+logger.info("Número de features: %d", x_test.shape[1])
 
 
 # ============================================================================
@@ -132,6 +118,11 @@ stores_sales_forecasting_pipeline = joblib.load(PIPELINE_PATH)
 print(f"✅ Pipeline cargado desde: {PIPELINE_PATH}")
 print(f"   Número de pasos en el pipeline: {len(stores_sales_forecasting_pipeline.steps)}")
 
+# Mostrar pasos del pipeline para debugging
+print("   Pasos del pipeline:")
+for i, (name, _) in enumerate(stores_sales_forecasting_pipeline.steps, 1):
+    print(f"      {i}. {name}")
+
 logger.info("Pipeline cargado: %s", PIPELINE_PATH)
 
 
@@ -143,17 +134,24 @@ print("GENERACIÓN DE PREDICCIONES")
 print("=" * 80 + "\n")
 
 start_time = datetime.now()
-predicciones = stores_sales_forecasting_pipeline.predict(x_test)
-end_time = datetime.now()
-inference_time = (end_time - start_time).total_seconds()
 
-print("✅ Predicciones generadas exitosamente")
-print(f"   Tiempo de inferencia: {inference_time:.2f} segundos")
-print(f"   Número de predicciones: {len(predicciones)}")
-print(f"   Tiempo por predicción: {inference_time/len(predicciones)*1000:.2f} ms")
-
-logger.info("Predicciones generadas: %d", len(predicciones))
-logger.info("Tiempo de inferencia: %.2f segundos", inference_time)
+try:
+    predicciones = stores_sales_forecasting_pipeline.predict(x_test)
+    end_time = datetime.now()
+    inference_time = (end_time - start_time).total_seconds()
+    
+    print("✅ Predicciones generadas exitosamente")
+    print(f"   Tiempo de inferencia: {inference_time:.2f} segundos")
+    print(f"   Número de predicciones: {len(predicciones)}")
+    print(f"   Tiempo por predicción: {inference_time/len(predicciones)*1000:.2f} ms")
+    
+    logger.info("Predicciones generadas: %d", len(predicciones))
+    logger.info("Tiempo de inferencia: %.2f segundos", inference_time)
+    
+except Exception as e:
+    print(f"❌ Error generando predicciones: {e}")
+    logger.error("Error generando predicciones: %s", str(e))
+    raise
 
 
 # ============================================================================

@@ -1,0 +1,5 @@
+features: ['Quantity', 'Discount', 'Ship Mode', 'Segment', 'Country', 'City', 'State', 'Region', 'Category', 'Sub-Category', 'Order_Month', 'Order_Quarter', 'Days to Ship']
+categorical_vars: ['Segment', 'Sub-Category', 'Country', 'City', 'State', 'Region', 'Category']
+numerical_vars_na: ['Quantity', 'Discount']
+log_transform_vars: ['Quantity']
+quality_mappings: {'Standard Class': 1, 'Second Class': 2, 'First Class': 3}

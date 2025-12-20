@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/630105506877034741/6092662d99524a8b871b5540ae894b5b/artifacts
+end_time: 1766195516179
+entry_point_name: ''
+experiment_id: '630105506877034741'
+lifecycle_stage: active
+run_id: 6092662d99524a8b871b5540ae894b5b
+run_name: preprocessing_pipeline
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766195511391
+status: 3
+tags: []
+user_id: M5

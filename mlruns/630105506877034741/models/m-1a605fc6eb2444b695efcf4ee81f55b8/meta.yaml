@@ -1,0 +1,10 @@
+artifact_location: mlflow-artifacts:/630105506877034741/models/m-1a605fc6eb2444b695efcf4ee81f55b8/artifacts
+creation_timestamp: 1766195511729
+experiment_id: '630105506877034741'
+last_updated_timestamp: 1766195515919
+model_id: m-1a605fc6eb2444b695efcf4ee81f55b8
+model_type: ''
+name: preprocessing_pipeline
+source_run_id: 6092662d99524a8b871b5540ae894b5b
+status: 2
+status_message: null

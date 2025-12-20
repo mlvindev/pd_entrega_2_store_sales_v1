@@ -104,14 +104,20 @@ FEATURES = [
     'Order_Month', 'Order_Quarter', 'Days to Ship'
 ]
 
-# Configuración de rutas
-DATA_RAW_PATH = '../data/raw/stores_sales_forecasting_updated_v3.1.csv'
-DATA_INTERIM_PATH = '../data/interim/'
-MODELS_PATH = '../models/'
+# Configuración de rutas relativas pruebas proyecto
+#DATA_RAW_PATH = '../data/raw/stores_sales_forecasting_updated_v3.1.csv'
+#DATA_INTERIM_PATH = '../data/interim/'
+#MODELS_PATH = '../models/'
+
 PIPELINE_FILENAME = 'stores_sales_forecasting_data_pre_proc.pkl'
 
+# Configuración de rutas absolutas teniendo dvc
+DATA_RAW_PATH = 'data/raw/stores_sales_forecasting_updated_v3.1.csv'
+DATA_INTERIM_PATH = 'data/interim/'
+MODELS_PATH = 'models/'
+
 # Configuración de MLflow
-MLFLOW_TRACKING_URI = "http://127.0.0.1:5000"
+MLFLOW_TRACKING_URI = "http://127.0.0.1:8080"
 MLFLOW_EXPERIMENT_NAME = "Feature_Engineering_Pipeline"
 
 # ============================================================================

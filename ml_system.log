@@ -1,0 +1,317 @@
+2025-12-19 19:32:29 | INFO     | ======================================================================
+2025-12-19 19:32:29 | INFO     | Iniciando proceso de Feature Engineering
+2025-12-19 19:32:29 | INFO     | ======================================================================
+2025-12-19 19:32:29 | INFO     | Directorio verificado/creado: data/interim/
+2025-12-19 19:32:29 | INFO     | Directorio verificado/creado: models/
+2025-12-19 19:32:29 | ERROR    | Error configurando MLflow: API request to endpoint /api/2.0/mlflow/experiments/get-by-name failed with error code 404 != 200. Response body: '<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+'
+2025-12-19 19:32:29 | ERROR    | Error en el proceso: API request to endpoint /api/2.0/mlflow/experiments/get-by-name failed with error code 404 != 200. Response body: '<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+'
+Traceback (most recent call last):
+  File "C:\Users\melvi\Documents\Project_productDevelopment\ProyectoFinal\pd_entrega_2_store_sales_v1\prod-project_pd_entrega2\feature_eng_creation.py", line 670, in main
+    setup_mlflow()
+  File "C:\Users\melvi\Documents\Project_productDevelopment\ProyectoFinal\pd_entrega_2_store_sales_v1\prod-project_pd_entrega2\feature_eng_creation.py", line 136, in setup_mlflow
+    experiment = mlflow.set_experiment(MLFLOW_EXPERIMENT_NAME)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\tracking\fluent.py", line 190, in set_experiment
+    experiment = client.get_experiment_by_name(experiment_name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 280, in get_experiment_by_name
+    return self.store.get_experiment_by_name(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 889, in get_experiment_by_name
+    response_proto = self._call_endpoint(GetExperimentByName, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 208, in _call_endpoint
+    return call_endpoint(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\utils\rest_utils.py", line 596, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\utils\rest_utils.py", line 321, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/experiments/get-by-name failed with error code 404 != 200. Response body: '<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+'
+2025-12-19 19:35:26 | INFO     | ======================================================================
+2025-12-19 19:35:26 | INFO     | Iniciando proceso de Feature Engineering
+2025-12-19 19:35:26 | INFO     | ======================================================================
+2025-12-19 19:35:26 | INFO     | Directorio verificado/creado: ../data/interim/
+2025-12-19 19:35:26 | INFO     | Directorio verificado/creado: ../models/
+2025-12-19 19:35:27 | ERROR    | Error configurando MLflow: API request to endpoint /api/2.0/mlflow/experiments/get-by-name failed with error code 404 != 200. Response body: '<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+'
+2025-12-19 19:35:27 | ERROR    | Error en el proceso: API request to endpoint /api/2.0/mlflow/experiments/get-by-name failed with error code 404 != 200. Response body: '<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+'
+Traceback (most recent call last):
+  File "C:\Users\melvi\Documents\Project_productDevelopment\ProyectoFinal\pd_entrega_2_store_sales_v1\prod-project_pd_entrega2\feature_eng_creation.py", line 670, in main
+    setup_mlflow()
+  File "C:\Users\melvi\Documents\Project_productDevelopment\ProyectoFinal\pd_entrega_2_store_sales_v1\prod-project_pd_entrega2\feature_eng_creation.py", line 136, in setup_mlflow
+    experiment = mlflow.set_experiment(MLFLOW_EXPERIMENT_NAME)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\tracking\fluent.py", line 190, in set_experiment
+    experiment = client.get_experiment_by_name(experiment_name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 280, in get_experiment_by_name
+    return self.store.get_experiment_by_name(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 889, in get_experiment_by_name
+    response_proto = self._call_endpoint(GetExperimentByName, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 208, in _call_endpoint
+    return call_endpoint(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\utils\rest_utils.py", line 596, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\utils\rest_utils.py", line 321, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/experiments/get-by-name failed with error code 404 != 200. Response body: '<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+'
+2025-12-19 19:40:48 | INFO     | ======================================================================
+2025-12-19 19:40:48 | INFO     | Iniciando proceso de Feature Engineering
+2025-12-19 19:40:48 | INFO     | ======================================================================
+2025-12-19 19:40:48 | INFO     | Directorio verificado/creado: ../data/interim/
+2025-12-19 19:40:48 | INFO     | Directorio verificado/creado: ../models/
+2025-12-19 19:40:49 | ERROR    | Error configurando MLflow: API request to endpoint /api/2.0/mlflow/experiments/get-by-name failed with error code 404 != 200. Response body: '<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+'
+2025-12-19 19:40:49 | ERROR    | Error en el proceso: API request to endpoint /api/2.0/mlflow/experiments/get-by-name failed with error code 404 != 200. Response body: '<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+'
+Traceback (most recent call last):
+  File "C:\Users\melvi\Documents\Project_productDevelopment\ProyectoFinal\pd_entrega_2_store_sales_v1\prod-project_pd_entrega2\feature_eng_creation.py", line 673, in main
+    setup_mlflow()
+  File "C:\Users\melvi\Documents\Project_productDevelopment\ProyectoFinal\pd_entrega_2_store_sales_v1\prod-project_pd_entrega2\feature_eng_creation.py", line 139, in setup_mlflow
+    experiment = mlflow.set_experiment(MLFLOW_EXPERIMENT_NAME)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\tracking\fluent.py", line 190, in set_experiment
+    experiment = client.get_experiment_by_name(experiment_name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 280, in get_experiment_by_name
+    return self.store.get_experiment_by_name(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 889, in get_experiment_by_name
+    response_proto = self._call_endpoint(GetExperimentByName, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 208, in _call_endpoint
+    return call_endpoint(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\utils\rest_utils.py", line 596, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\utils\rest_utils.py", line 321, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/experiments/get-by-name failed with error code 404 != 200. Response body: '<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+'
+2025-12-19 19:41:36 | INFO     | ======================================================================
+2025-12-19 19:41:36 | INFO     | Iniciando proceso de Feature Engineering
+2025-12-19 19:41:36 | INFO     | ======================================================================
+2025-12-19 19:41:36 | INFO     | Directorio verificado/creado: ../data/interim/
+2025-12-19 19:41:36 | INFO     | Directorio verificado/creado: ../models/
+2025-12-19 19:41:36 | ERROR    | Error configurando MLflow: API request to endpoint /api/2.0/mlflow/experiments/get-by-name failed with error code 404 != 200. Response body: '<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+'
+2025-12-19 19:41:36 | ERROR    | Error en el proceso: API request to endpoint /api/2.0/mlflow/experiments/get-by-name failed with error code 404 != 200. Response body: '<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+'
+Traceback (most recent call last):
+  File "C:\Users\melvi\Documents\Project_productDevelopment\ProyectoFinal\pd_entrega_2_store_sales_v1\prod-project_pd_entrega2\feature_eng_creation.py", line 673, in main
+    setup_mlflow()
+  File "C:\Users\melvi\Documents\Project_productDevelopment\ProyectoFinal\pd_entrega_2_store_sales_v1\prod-project_pd_entrega2\feature_eng_creation.py", line 139, in setup_mlflow
+    experiment = mlflow.set_experiment(MLFLOW_EXPERIMENT_NAME)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\tracking\fluent.py", line 190, in set_experiment
+    experiment = client.get_experiment_by_name(experiment_name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 280, in get_experiment_by_name
+    return self.store.get_experiment_by_name(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 889, in get_experiment_by_name
+    response_proto = self._call_endpoint(GetExperimentByName, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 208, in _call_endpoint
+    return call_endpoint(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\utils\rest_utils.py", line 596, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\utils\rest_utils.py", line 321, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/experiments/get-by-name failed with error code 404 != 200. Response body: '<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+'
+2025-12-19 19:41:54 | INFO     | ======================================================================
+2025-12-19 19:41:54 | INFO     | Iniciando proceso de Feature Engineering
+2025-12-19 19:41:54 | INFO     | ======================================================================
+2025-12-19 19:41:54 | INFO     | Directorio verificado/creado: data/interim/
+2025-12-19 19:41:54 | INFO     | Directorio verificado/creado: models/
+2025-12-19 19:41:54 | ERROR    | Error configurando MLflow: API request to endpoint /api/2.0/mlflow/experiments/get-by-name failed with error code 404 != 200. Response body: '<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+'
+2025-12-19 19:41:54 | ERROR    | Error en el proceso: API request to endpoint /api/2.0/mlflow/experiments/get-by-name failed with error code 404 != 200. Response body: '<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+'
+Traceback (most recent call last):
+  File "C:\Users\melvi\Documents\Project_productDevelopment\ProyectoFinal\pd_entrega_2_store_sales_v1\prod-project_pd_entrega2\feature_eng_creation.py", line 673, in main
+    setup_mlflow()
+  File "C:\Users\melvi\Documents\Project_productDevelopment\ProyectoFinal\pd_entrega_2_store_sales_v1\prod-project_pd_entrega2\feature_eng_creation.py", line 139, in setup_mlflow
+    experiment = mlflow.set_experiment(MLFLOW_EXPERIMENT_NAME)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\tracking\fluent.py", line 190, in set_experiment
+    experiment = client.get_experiment_by_name(experiment_name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 280, in get_experiment_by_name
+    return self.store.get_experiment_by_name(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 889, in get_experiment_by_name
+    response_proto = self._call_endpoint(GetExperimentByName, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 208, in _call_endpoint
+    return call_endpoint(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\utils\rest_utils.py", line 596, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\utils\rest_utils.py", line 321, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/experiments/get-by-name failed with error code 404 != 200. Response body: '<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+'
+2025-12-19 19:44:50 | INFO     | ======================================================================
+2025-12-19 19:44:50 | INFO     | Iniciando proceso de Feature Engineering
+2025-12-19 19:44:50 | INFO     | ======================================================================
+2025-12-19 19:44:50 | INFO     | Directorio verificado/creado: ../data/interim/
+2025-12-19 19:44:50 | INFO     | Directorio verificado/creado: ../models/
+2025-12-19 19:44:51 | ERROR    | Error configurando MLflow: API request to endpoint /api/2.0/mlflow/experiments/get-by-name failed with error code 404 != 200. Response body: '<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+'
+2025-12-19 19:44:51 | ERROR    | Error en el proceso: API request to endpoint /api/2.0/mlflow/experiments/get-by-name failed with error code 404 != 200. Response body: '<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+'
+Traceback (most recent call last):
+  File "C:\Users\melvi\Documents\Project_productDevelopment\ProyectoFinal\pd_entrega_2_store_sales_v1\prod-project_pd_entrega2\feature_eng_creation.py", line 671, in main
+    setup_mlflow()
+  File "C:\Users\melvi\Documents\Project_productDevelopment\ProyectoFinal\pd_entrega_2_store_sales_v1\prod-project_pd_entrega2\feature_eng_creation.py", line 137, in setup_mlflow
+    experiment = mlflow.set_experiment(MLFLOW_EXPERIMENT_NAME)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\tracking\fluent.py", line 190, in set_experiment
+    experiment = client.get_experiment_by_name(experiment_name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 280, in get_experiment_by_name
+    return self.store.get_experiment_by_name(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 889, in get_experiment_by_name
+    response_proto = self._call_endpoint(GetExperimentByName, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 208, in _call_endpoint
+    return call_endpoint(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\utils\rest_utils.py", line 596, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\melvi\anaconda3\envs\venv_papd_a\Lib\site-packages\mlflow\utils\rest_utils.py", line 321, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/experiments/get-by-name failed with error code 404 != 200. Response body: '<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+'
+2025-12-19 19:45:33 - INFO - ================================================================================
+2025-12-19 19:45:33 - INFO - Iniciando proceso de entrenamiento de modelos
+2025-12-19 19:45:33 - INFO - ================================================================================
+2025-12-19 19:51:50 | INFO     | ======================================================================
+2025-12-19 19:51:50 | INFO     | Iniciando proceso de Feature Engineering
+2025-12-19 19:51:50 | INFO     | ======================================================================
+2025-12-19 19:51:50 | INFO     | Directorio verificado/creado: data/interim/
+2025-12-19 19:51:50 | INFO     | Directorio verificado/creado: models/
+2025-12-19 19:51:51 | INFO     | MLflow configurado - Experimento: Feature_Engineering_Pipeline
+2025-12-19 19:51:51 | INFO     | Cargando dataset desde: data/raw/stores_sales_forecasting_updated_v3.1.csv
+2025-12-19 19:51:51 | INFO     | Dataset cargado exitosamente: (2121, 22)
+2025-12-19 19:51:51 | INFO     | Features derivadas creadas exitosamente
+2025-12-19 19:51:51 | INFO     | Valores nulos artificiales creados (5.0%)
+2025-12-19 19:51:51 | INFO     | Split temporal completado - Train: 1696, Test: 425
+2025-12-19 19:51:51 | INFO     | Pipeline de preprocesamiento construido con 8 pasos
+2025-12-19 19:51:56 | INFO     | Pipeline entrenado y registrado en MLflow - Tiempo: 0.02s
+2025-12-19 19:51:56 | INFO     | Datos data_train procesados y guardados: (1696, 14)
+2025-12-19 19:51:56 | INFO     | Datos data_test procesados y guardados: (425, 14)
+2025-12-19 19:51:56 | INFO     | Validación de datos procesados completada
+2025-12-19 19:51:56 | INFO     | Pipeline guardado en: models/stores_sales_forecasting_data_pre_proc.pkl
+2025-12-19 19:51:56 | INFO     | Proceso de Feature Engineering completado exitosamente
+2025-12-19 19:51:58 - INFO - ================================================================================
+2025-12-19 19:51:58 - INFO - Iniciando proceso de entrenamiento de modelos
+2025-12-19 19:51:58 - INFO - ================================================================================
+2025-12-19 19:51:58 - INFO - Iniciando entrenamiento de modelos
+2025-12-19 19:52:05 - INFO - linear_regression - RMSE: 447.43 (+/- 87.98), R²: 0.1847, MAE: 281.10, Tiempo: 6.24s
+2025-12-19 19:52:09 - INFO - random_forest - RMSE: 263.03 (+/- 45.73), R²: 0.7157, MAE: 122.88, Tiempo: 4.03s
+2025-12-19 19:52:11 - INFO - gradient_boosting - RMSE: 265.18 (+/- 49.74), R²: 0.7132, MAE: 133.35, Tiempo: 0.75s
+2025-12-19 19:52:12 - INFO - svr - RMSE: 524.66 (+/- 77.37), R²: -0.1150, MAE: 287.19, Tiempo: 0.56s
+2025-12-19 19:52:13 - INFO - xgboost - RMSE: 281.51 (+/- 55.75), R²: 0.6751, MAE: 133.61, Tiempo: 0.51s
+2025-12-19 19:52:13 - INFO - Entrenamiento completado en 14.81 segundos
+2025-12-19 19:52:13 - INFO - Modelo campeón seleccionado: random_forest con RMSE=263.03
+2025-12-19 19:52:18 - INFO - Modelo campeón registrado - Run ID: 3feb931b0e8041d5b8c979b07b139f5c
+2025-12-19 19:52:18 - INFO - Métricas finales - RMSE: 100.45, R²: 0.9601
+2025-12-19 19:52:18 - INFO - Pipeline completo guardado con modelo campeón: random_forest
+2025-12-19 19:52:18 - INFO - Métricas en test - RMSE: 466.28, R²: 0.3101
+2025-12-19 19:52:18 - INFO - ================================================================================
+2025-12-19 19:52:18 - INFO - Proceso de entrenamiento completado exitosamente
+2025-12-19 19:52:18 - INFO - Modelo campeón: random_forest
+2025-12-19 19:52:18 - INFO - RMSE en test: 466.28
+2025-12-19 19:52:18 - INFO - ================================================================================
