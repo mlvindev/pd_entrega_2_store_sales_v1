@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/897420715429005166/45dd8f5631b44c84a56509c608a7e421/artifacts
+end_time: 1766114834366
+entry_point_name: ''
+experiment_id: '897420715429005166'
+lifecycle_stage: active
+run_id: 45dd8f5631b44c84a56509c608a7e421
+run_name: defiant-mole-100
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766114834153
+status: 3
+tags: []
+user_id: M5

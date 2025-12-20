@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/897420715429005166/535082b396334751b99592911cd5f0ab/artifacts
+end_time: 1766114756837
+entry_point_name: ''
+experiment_id: '897420715429005166'
+lifecycle_stage: active
+run_id: 535082b396334751b99592911cd5f0ab
+run_name: placid-fly-514
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766114756690
+status: 4
+tags: []
+user_id: M5

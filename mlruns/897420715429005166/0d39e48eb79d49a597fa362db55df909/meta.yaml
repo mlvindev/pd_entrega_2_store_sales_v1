@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/897420715429005166/0d39e48eb79d49a597fa362db55df909/artifacts
+end_time: 1766114699389
+entry_point_name: ''
+experiment_id: '897420715429005166'
+lifecycle_stage: active
+run_id: 0d39e48eb79d49a597fa362db55df909
+run_name: placid-rat-951
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766114699259
+status: 4
+tags: []
+user_id: M5

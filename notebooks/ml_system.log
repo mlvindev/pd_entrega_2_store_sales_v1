@@ -108,3 +108,133 @@
 2025-11-21 19:47, INFO, RMSE del modelo svr: 524.659319441004, ENTRENAMIENTO
 2025-11-21 19:47, INFO, RMSE del modelo xgboost: 281.5076437589496, ENTRENAMIENTO
 2025-11-21 19:47, INFO, Tiempo de entrenamiento 21.638813734054565, ENTRENAMIENTO
+2025-12-18 21:19, INFO, Iniciando Entrenamiento, ENTRENAMIENTO
+2025-12-18 21:19, INFO, RMSE del modelo linear_regression: 447.434465582499, ENTRENAMIENTO
+2025-12-18 21:19, INFO, RMSE del modelo random_forest: 263.0268757973177, ENTRENAMIENTO
+2025-12-18 21:19, INFO, RMSE del modelo gradient_boosting: 265.1774861472474, ENTRENAMIENTO
+2025-12-18 21:19, INFO, RMSE del modelo svr: 524.6593194410038, ENTRENAMIENTO
+2025-12-18 21:19, INFO, RMSE del modelo xgboost: 281.5076437589496, ENTRENAMIENTO
+2025-12-18 21:19, INFO, Tiempo de entrenamiento 13.383928060531616, ENTRENAMIENTO
+2025-12-18 21:23, INFO, Iniciando Entrenamiento, ENTRENAMIENTO
+2025-12-18 21:23, INFO, RMSE del modelo linear_regression: 447.434465582499, ENTRENAMIENTO
+2025-12-18 21:24, INFO, Iniciando Entrenamiento, ENTRENAMIENTO
+2025-12-18 21:24, INFO, RMSE del modelo linear_regression: 447.434465582499, ENTRENAMIENTO
+2025-12-18 21:24, INFO, Iniciando Entrenamiento, ENTRENAMIENTO
+2025-12-18 21:24, INFO, RMSE del modelo linear_regression: 447.434465582499, ENTRENAMIENTO
+2025-12-18 21:25, INFO, Iniciando Entrenamiento, ENTRENAMIENTO
+2025-12-18 21:25, INFO, RMSE del modelo linear_regression: 447.434465582499, ENTRENAMIENTO
+2025-12-18 21:27, INFO, Iniciando Entrenamiento, ENTRENAMIENTO
+2025-12-18 21:27, INFO, RMSE del modelo linear_regression: 447.434465582499, ENTRENAMIENTO
+2025-12-18 21:27, INFO, RMSE del modelo random_forest: 263.0268757973177, ENTRENAMIENTO
+2025-12-18 21:27, INFO, RMSE del modelo gradient_boosting: 265.1774861472474, ENTRENAMIENTO
+2025-12-18 21:27, INFO, RMSE del modelo svr: 524.6593194410038, ENTRENAMIENTO
+2025-12-18 21:27, INFO, RMSE del modelo xgboost: 281.5076437589496, ENTRENAMIENTO
+2025-12-18 21:27, INFO, Tiempo de entrenamiento 14.225602388381958, ENTRENAMIENTO
+2025-12-18 21:56:28 - INFO - ================================================================================
+2025-12-18 21:56:28 - INFO - Iniciando proceso de entrenamiento de modelos
+2025-12-18 21:56:28 - INFO - ================================================================================
+2025-12-18 21:56:56 - INFO - Iniciando entrenamiento de modelos
+2025-12-18 21:57:03 - INFO - linear_regression - RMSE: 447.43 (+/- 87.98), R²: 0.1847, MAE: 281.10, Tiempo: 6.98s
+2025-12-18 21:57:08 - INFO - random_forest - RMSE: 263.03 (+/- 45.73), R²: 0.7157, MAE: 122.88, Tiempo: 4.73s
+2025-12-18 21:57:10 - INFO - gradient_boosting - RMSE: 265.18 (+/- 49.74), R²: 0.7132, MAE: 133.35, Tiempo: 0.81s
+2025-12-18 21:57:11 - INFO - svr - RMSE: 524.66 (+/- 77.37), R²: -0.1150, MAE: 287.19, Tiempo: 0.61s
+2025-12-18 21:57:12 - INFO - xgboost - RMSE: 281.51 (+/- 55.75), R²: 0.6751, MAE: 133.61, Tiempo: 0.54s
+2025-12-18 21:57:13 - INFO - Entrenamiento completado en 17.02 segundos
+2025-12-18 21:57:25 - INFO - Modelo campeón seleccionado: random_forest con RMSE=263.03
+2025-12-18 21:57:45 - INFO - Modelo campeón registrado - Run ID: 01f2facfa18d41a98df20095042e4d3c
+2025-12-18 21:57:45 - INFO - Métricas finales - RMSE: 100.45, R²: 0.9601
+2025-12-18 21:58:03 - INFO - Pipeline completo guardado con modelo campeón: random_forest
+2025-12-18 21:58:03 - INFO - Métricas en test - RMSE: 289.09, R²: 0.7348
+2025-12-18 21:58:15 - INFO - ================================================================================
+2025-12-18 21:58:15 - INFO - Proceso de entrenamiento completado exitosamente
+2025-12-18 21:58:15 - INFO - Modelo campeón: random_forest
+2025-12-18 21:58:15 - INFO - RMSE en test: 289.09
+2025-12-18 21:58:15 - INFO - ================================================================================
+2025-12-18 22:15:01 - INFO - Iniciando entrenamiento de modelos
+2025-12-18 22:15:08 - INFO - linear_regression - RMSE: 447.43 (+/- 87.98), R²: 0.1847, MAE: 281.10, Tiempo: 7.16s
+2025-12-18 22:15:14 - INFO - random_forest - RMSE: 263.03 (+/- 45.73), R²: 0.7157, MAE: 122.88, Tiempo: 4.43s
+2025-12-18 22:15:15 - INFO - gradient_boosting - RMSE: 265.18 (+/- 49.74), R²: 0.7132, MAE: 133.35, Tiempo: 0.83s
+2025-12-18 22:15:16 - INFO - svr - RMSE: 524.66 (+/- 77.37), R²: -0.1150, MAE: 287.19, Tiempo: 0.60s
+2025-12-18 22:15:18 - INFO - xgboost - RMSE: 281.51 (+/- 55.75), R²: 0.6751, MAE: 133.61, Tiempo: 0.52s
+2025-12-18 22:15:18 - INFO - Entrenamiento completado en 17.07 segundos
+2025-12-18 22:15:57 - INFO - ================================================================================
+2025-12-18 22:15:57 - INFO - Proceso de entrenamiento completado exitosamente
+2025-12-18 22:15:57 - INFO - Modelo campeón: random_forest
+2025-12-18 22:15:57 - INFO - RMSE en test: 289.09
+2025-12-18 22:15:57 - INFO - ================================================================================
+2025-12-18 22:16:16 - INFO - ================================================================================
+2025-12-18 22:16:16 - INFO - Proceso de entrenamiento completado exitosamente
+2025-12-18 22:16:16 - INFO - Modelo campeón: random_forest
+2025-12-18 22:16:16 - INFO - RMSE en test: 289.09
+2025-12-18 22:16:16 - INFO - ================================================================================
+2025-12-18 22:45:00 - INFO - ================================================================================
+2025-12-18 22:45:00 - INFO - Iniciando proceso de entrenamiento de modelos
+2025-12-18 22:45:00 - INFO - ================================================================================
+2025-12-18 22:45:11 - INFO - Iniciando entrenamiento de modelos
+2025-12-18 22:45:22 - INFO - linear_regression - RMSE: 447.43 (+/- 87.98), R²: 0.1847, MAE: 281.10, Tiempo: 10.65s
+2025-12-18 22:45:29 - INFO - random_forest - RMSE: 263.03 (+/- 45.73), R²: 0.7157, MAE: 122.88, Tiempo: 5.69s
+2025-12-18 22:45:32 - INFO - gradient_boosting - RMSE: 265.18 (+/- 49.74), R²: 0.7132, MAE: 133.35, Tiempo: 2.44s
+2025-12-18 22:45:33 - INFO - svr - RMSE: 524.66 (+/- 77.37), R²: -0.1150, MAE: 287.19, Tiempo: 0.83s
+2025-12-18 22:45:35 - INFO - xgboost - RMSE: 281.51 (+/- 55.75), R²: 0.6751, MAE: 133.61, Tiempo: 0.73s
+2025-12-18 22:45:35 - INFO - Entrenamiento completado en 24.44 segundos
+2025-12-18 22:45:39 - INFO - Modelo campeón seleccionado: random_forest con RMSE=263.03
+2025-12-18 22:45:55 - INFO - Modelo campeón registrado - Run ID: f0fbcc0ca4f247b992f97d78dbd4d0a5
+2025-12-18 22:45:55 - INFO - Métricas finales - RMSE: 100.45, R²: 0.9601
+2025-12-18 22:46:18 - INFO - Pipeline completo guardado con modelo campeón: random_forest
+2025-12-18 22:46:18 - INFO - Métricas en test - RMSE: 289.09, R²: 0.7348
+2025-12-18 22:46:37 - INFO - ================================================================================
+2025-12-18 22:46:37 - INFO - Proceso de entrenamiento completado exitosamente
+2025-12-18 22:46:37 - INFO - Modelo campeón: random_forest
+2025-12-18 22:46:37 - INFO - RMSE en test: 289.09
+2025-12-18 22:46:37 - INFO - ================================================================================
+2025-12-19 15:23:56 - INFO - ================================================================================
+2025-12-19 15:23:56 - INFO - Iniciando proceso de entrenamiento de modelos
+2025-12-19 15:23:56 - INFO - ================================================================================
+2025-12-19 15:28:40 - INFO - ================================================================================
+2025-12-19 15:28:40 - INFO - Iniciando proceso de entrenamiento de modelos
+2025-12-19 15:28:40 - INFO - ================================================================================
+2025-12-19 15:35:02 - INFO - Iniciando entrenamiento de modelos
+2025-12-19 15:35:10 - INFO - linear_regression - RMSE: 447.43 (+/- 87.98), R²: 0.1847, MAE: 281.10, Tiempo: 7.31s
+2025-12-19 15:35:16 - INFO - random_forest - RMSE: 263.03 (+/- 45.73), R²: 0.7157, MAE: 122.88, Tiempo: 4.91s
+2025-12-19 15:35:17 - INFO - gradient_boosting - RMSE: 265.18 (+/- 49.74), R²: 0.7132, MAE: 133.35, Tiempo: 0.84s
+2025-12-19 15:35:19 - INFO - svr - RMSE: 524.66 (+/- 77.37), R²: -0.1150, MAE: 287.19, Tiempo: 0.83s
+2025-12-19 15:35:20 - INFO - xgboost - RMSE: 281.51 (+/- 55.75), R²: 0.6751, MAE: 133.61, Tiempo: 0.64s
+2025-12-19 15:35:20 - INFO - Entrenamiento completado en 18.18 segundos
+2025-12-19 16:42:39 - INFO - ================================================================================
+2025-12-19 16:42:39 - INFO - Iniciando proceso de entrenamiento de modelos
+2025-12-19 16:42:39 - INFO - ================================================================================
+2025-12-19 16:42:49 - INFO - Iniciando entrenamiento de modelos
+2025-12-19 16:49:09 - INFO - Iniciando entrenamiento de modelos
+2025-12-19 16:49:16 - INFO - linear_regression - RMSE: 447.43 (+/- 87.98), R²: 0.1847, MAE: 281.10, Tiempo: 6.86s
+2025-12-19 16:49:21 - INFO - random_forest - RMSE: 263.03 (+/- 45.73), R²: 0.7157, MAE: 122.88, Tiempo: 4.45s
+2025-12-19 16:49:23 - INFO - gradient_boosting - RMSE: 265.18 (+/- 49.74), R²: 0.7132, MAE: 133.35, Tiempo: 0.85s
+2025-12-19 16:49:24 - INFO - svr - RMSE: 524.66 (+/- 77.37), R²: -0.1150, MAE: 287.19, Tiempo: 0.64s
+2025-12-19 16:49:25 - INFO - xgboost - RMSE: 281.51 (+/- 55.75), R²: 0.6751, MAE: 133.61, Tiempo: 0.54s
+2025-12-19 16:49:25 - INFO - Entrenamiento completado en 16.63 segundos
+2025-12-19 16:51:13 - INFO - Iniciando entrenamiento de modelos
+2025-12-19 16:51:13 - INFO - linear_regression - RMSE: 447.43 (+/- 87.98), R²: 0.1847, MAE: 281.10, Tiempo: 0.07s
+2025-12-19 16:51:16 - INFO - random_forest - RMSE: 263.03 (+/- 45.73), R²: 0.7157, MAE: 122.88, Tiempo: 2.32s
+2025-12-19 16:51:17 - INFO - gradient_boosting - RMSE: 265.18 (+/- 49.74), R²: 0.7132, MAE: 133.35, Tiempo: 0.72s
+2025-12-19 16:51:19 - INFO - svr - RMSE: 524.66 (+/- 77.37), R²: -0.1150, MAE: 287.19, Tiempo: 0.66s
+2025-12-19 16:51:20 - INFO - xgboost - RMSE: 281.51 (+/- 55.75), R²: 0.6751, MAE: 133.61, Tiempo: 0.47s
+2025-12-19 16:51:20 - INFO - Entrenamiento completado en 7.25 segundos
+2025-12-19 16:52:11 - INFO - Modelo campeón seleccionado: random_forest con RMSE=263.03
+2025-12-19 16:52:22 - INFO - Modelo campeón registrado - Run ID: 5aec3d0e00254adf9759533718f57e6b
+2025-12-19 16:52:22 - INFO - Métricas finales - RMSE: 100.45, R²: 0.9601
+2025-12-19 16:52:25 - INFO - Pipeline completo guardado con modelo campeón: random_forest
+2025-12-19 16:52:25 - INFO - Métricas en test - RMSE: 466.28, R²: 0.3101
+2025-12-19 16:52:28 - INFO - ================================================================================
+2025-12-19 16:52:28 - INFO - Proceso de entrenamiento completado exitosamente
+2025-12-19 16:52:28 - INFO - Modelo campeón: random_forest
+2025-12-19 16:52:28 - INFO - RMSE en test: 466.28
+2025-12-19 16:52:28 - INFO - ================================================================================
+2025-12-19 17:27:47 - INFO - ================================================================================
+2025-12-19 17:27:47 - INFO - Iniciando proceso de entrenamiento de modelos
+2025-12-19 17:27:47 - INFO - ================================================================================
+2025-12-19 17:27:59 - INFO - Iniciando entrenamiento de modelos
+2025-12-19 17:28:08 - INFO - linear_regression - RMSE: 447.43 (+/- 87.98), R²: 0.1847, MAE: 281.10, Tiempo: 8.55s
+2025-12-19 17:28:13 - INFO - random_forest - RMSE: 263.03 (+/- 45.73), R²: 0.7157, MAE: 122.88, Tiempo: 4.62s
+2025-12-19 17:28:15 - INFO - gradient_boosting - RMSE: 265.18 (+/- 49.74), R²: 0.7132, MAE: 133.35, Tiempo: 0.82s
+2025-12-19 17:28:16 - INFO - svr - RMSE: 524.66 (+/- 77.37), R²: -0.1150, MAE: 287.19, Tiempo: 0.62s
+2025-12-19 17:28:17 - INFO - xgboost - RMSE: 281.51 (+/- 55.75), R²: 0.6751, MAE: 133.61, Tiempo: 0.54s
+2025-12-19 17:28:18 - INFO - Entrenamiento completado en 18.77 segundos

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/507424209113317466/7195f9e224ea40a1a9aab57f6e931cd8/artifacts
+end_time: 1766186896631
+entry_point_name: ''
+experiment_id: '507424209113317466'
+lifecycle_stage: active
+run_id: 7195f9e224ea40a1a9aab57f6e931cd8
+run_name: svr_challenger
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766186895731
+status: 3
+tags: []
+user_id: M5

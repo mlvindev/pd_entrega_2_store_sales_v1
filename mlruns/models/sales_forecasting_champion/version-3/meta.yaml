@@ -1,0 +1,15 @@
+creation_timestamp: 1766184741996
+current_stage: None
+deployment_job_state: null
+description: ''
+last_updated_timestamp: 1766184741996
+model_id: m-94f85bd1d70345498c0716506ceadb6c
+name: sales_forecasting_champion
+run_id: 5aec3d0e00254adf9759533718f57e6b
+run_link: ''
+source: models:/m-94f85bd1d70345498c0716506ceadb6c
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/507424209113317466/models/m-94f85bd1d70345498c0716506ceadb6c/artifacts
+user_id: null
+version: 3

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/897420715429005166/dda2b1953bd64d639f840dd90fcd3990/artifacts
+end_time: 1766114848342
+entry_point_name: ''
+experiment_id: '897420715429005166'
+lifecycle_stage: active
+run_id: dda2b1953bd64d639f840dd90fcd3990
+run_name: spiffy-chimp-557
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766114848267
+status: 3
+tags: []
+user_id: M5

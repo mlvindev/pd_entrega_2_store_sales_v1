@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/507424209113317466/e825de84473245eeb9fb9ec1e7321042/artifacts
+end_time: 1766117715690
+entry_point_name: ''
+experiment_id: '507424209113317466'
+lifecycle_stage: active
+run_id: e825de84473245eeb9fb9ec1e7321042
+run_name: gradient_boosting_challenger
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766117714468
+status: 3
+tags: []
+user_id: M5

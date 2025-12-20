@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/897420715429005166/fd42269f5ffa425c91bc484a7243d3bc/artifacts
+end_time: 1766114623372
+entry_point_name: ''
+experiment_id: '897420715429005166'
+lifecycle_stage: active
+run_id: fd42269f5ffa425c91bc484a7243d3bc
+run_name: selective-lynx-109
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766114623137
+status: 4
+tags: []
+user_id: M5

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/897420715429005166/f843845ac30441c08bdf81842e943ae7/artifacts
+end_time: 1766114844268
+entry_point_name: ''
+experiment_id: '897420715429005166'
+lifecycle_stage: active
+run_id: f843845ac30441c08bdf81842e943ae7
+run_name: persistent-whale-121
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766114844149
+status: 3
+tags: []
+user_id: M5

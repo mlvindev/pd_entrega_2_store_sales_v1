@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/507424209113317466/c0c11148d53d4a17aea10db055020879/artifacts
+end_time: 1766116623481
+entry_point_name: ''
+experiment_id: '507424209113317466'
+lifecycle_stage: active
+run_id: c0c11148d53d4a17aea10db055020879
+run_name: linear_regression_challenger
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766116616204
+status: 3
+tags: []
+user_id: M5
